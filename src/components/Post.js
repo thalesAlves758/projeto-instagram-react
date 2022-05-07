@@ -1,6 +1,18 @@
+import { useState } from 'react';
+
 export default function Post(props) {
+  const [liked, setLiked] = useState(false);
+
   function numberWithDots(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+  }
+
+  function handleLike() {
+    setLiked(!liked);
+  }
+
+  function likePost() {
+    setLiked(true);
   }
 
   return (
@@ -15,14 +27,14 @@ export default function Post(props) {
         </div>
       </div>
 
-      <div className="conteudo">
+      <div className="conteudo" onClick={likePost}>
         <img src={props.contentImage} alt=""/>
       </div>
 
       <div className="fundo">
         <div className="acoes">
           <div>
-            <ion-icon name="heart-outline"></ion-icon>
+            <ion-icon onClick={handleLike} name={liked ? "heart" : "heart-outline"}></ion-icon>
             <ion-icon name="chatbubble-outline"></ion-icon>
             <ion-icon name="paper-plane-outline"></ion-icon>
           </div>
