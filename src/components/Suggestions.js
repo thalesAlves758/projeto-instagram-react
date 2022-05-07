@@ -21,13 +21,13 @@ export default function Suggestions() {
   ];
 
   return (
-    <div class="sugestoes">
-      <div class="titulo">
+    <div className="sugestoes">
+      <div className="titulo">
         Sugestões para você
         <div>Ver tudo</div>
       </div>
 
-      { suggestions.map(suggestion => <Suggestion image={suggestion.image} user={suggestion.user} />) }
+      { suggestions.map((suggestion, index) => <Suggestion key={index} image={suggestion.image} user={suggestion.user} />) }
     </div>
   );
 }

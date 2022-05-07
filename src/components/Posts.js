@@ -35,9 +35,10 @@ export default function Posts() {
   ];
 
   return (
-    <div class="posts">
-      { posts.map(post => (
+    <div className="posts">
+      { posts.map((post, index) => (
         <Post
+          key={index}
           image={post.image}
           user={post.user}
           contentImage={post.contentImage}

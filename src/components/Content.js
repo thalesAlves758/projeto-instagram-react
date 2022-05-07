@@ -11,22 +11,22 @@ export default function Content() {
   };
 
   return (
-    <div class="corpo">
-      <div class="esquerda">
+    <div className="corpo">
+      <div className="esquerda">
         <Stories />
         <Posts />
       </div>
 
-      <div class="sidebar">
+      <div className="sidebar">
         <UserInfo image={currentUser.image} user={currentUser.user} name={currentUser.name} />
 
         <Suggestions />
 
-        <div class="links">
+        <div className="links">
           Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos • Localizações • Contas mais relevantes • Hashtags • Idioma
         </div>
 
-        <div class="copyright">
+        <div className="copyright">
           © 2021 INSTAGRAM DO FACEBOOK
         </div>
       </div>

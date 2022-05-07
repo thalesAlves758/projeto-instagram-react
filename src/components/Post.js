@@ -4,23 +4,23 @@ export default function Post(props) {
   }
 
   return (
-    <div class="post">
-      <div class="topo">
-        <div class="usuario">
-          <img src={props.image} />
+    <div className="post">
+      <div className="topo">
+        <div className="usuario">
+          <img src={props.image} alt="" />
           {props.user}
         </div>
-        <div class="acoes">
+        <div className="acoes">
           <ion-icon name="ellipsis-horizontal"></ion-icon>
         </div>
       </div>
 
-      <div class="conteudo">
-        <img src={props.contentImage} />
+      <div className="conteudo">
+        <img src={props.contentImage} alt=""/>
       </div>
 
-      <div class="fundo">
-        <div class="acoes">
+      <div className="fundo">
+        <div className="acoes">
           <div>
             <ion-icon name="heart-outline"></ion-icon>
             <ion-icon name="chatbubble-outline"></ion-icon>
@@ -31,9 +31,9 @@ export default function Post(props) {
           </div>
         </div>
 
-        <div class="curtidas">
-          <img src={props.likedByImage} />
-          <div class="texto">
+        <div className="curtidas">
+          <img src={props.likedByImage} alt="" />
+          <div className="texto">
             Curtido por <strong>{props.likedByUser}</strong> e <strong>outras {numberWithDots(props.amountLikes)} pessoas</strong>
           </div>
         </div>
