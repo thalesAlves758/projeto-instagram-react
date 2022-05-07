@@ -1,5 +1,11 @@
-export default function App () {
+import TopBar from './TopBar';
+import Content from './Content';
+
+export default function App() {
     return (
-        <h1>Oi</h1>
+        <>
+            <TopBar />
+            <Content />
+        </>
     );
 }
