@@ -1,35 +1,11 @@
-import Stories from './Stories';
-import Posts from './Posts';
-import UserInfo from './UserInfo';
-import Suggestions from './Suggestions';
+import SideBar from './SideBar';
+import Feed from './Feed';
 
 export default function Content() {
-  const currentUser = {
-    image: "assets/img/catanacomics.svg",
-    user: "catanacomics",
-    name: "Catana",
-  };
-
   return (
     <div className="corpo">
-      <div className="esquerda">
-        <Stories />
-        <Posts />
-      </div>
-
-      <div className="sidebar">
-        <UserInfo image={currentUser.image} user={currentUser.user} name={currentUser.name} />
-
-        <Suggestions />
-
-        <div className="links">
-          Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos • Localizações • Contas mais relevantes • Hashtags • Idioma
-        </div>
-
-        <div className="copyright">
-          © 2021 INSTAGRAM DO FACEBOOK
-        </div>
-      </div>
+      <Feed />
+      <SideBar />
     </div>
   );
 }
