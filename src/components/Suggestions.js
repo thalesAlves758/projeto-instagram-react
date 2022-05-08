@@ -4,19 +4,23 @@ export default function Suggestions() {
   const suggestions = [
     {
       image: "assets/img/bad.vibes.memes.svg",
-      user: "bad.vibes.memes"
+      user: "bad.vibes.memes",
+      reason: "Segue você",
     },
     {
       image: "assets/img/bad.vibes.memes.svg",
-      user: "bad.vibes.memes"
+      user: "bad.vibes.memes",
+      reason: "Segue você",
     },
     {
       image: "assets/img/bad.vibes.memes.svg",
-      user: "bad.vibes.memes"
+      user: "bad.vibes.memes",
+      reason: "Novo no Instagram",
     },
     {
       image: "assets/img/bad.vibes.memes.svg",
-      user: "bad.vibes.memes"
+      user: "bad.vibes.memes",
+      reason: "Segue você",
     },
   ];
 
@@ -27,7 +31,14 @@ export default function Suggestions() {
         <div>Ver tudo</div>
       </div>
 
-      { suggestions.map((suggestion, index) => <Suggestion key={index} image={suggestion.image} user={suggestion.user} />) }
+      { suggestions.map((suggestion, index) => (
+        <Suggestion
+          key={index}
+          image={suggestion.image}
+          user={suggestion.user}
+          reason={suggestion.reason}
+        />
+      )) }
     </div>
   );
 }
