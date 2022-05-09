@@ -8,18 +8,23 @@ export default function Suggestions() {
       reason: "Segue você",
     },
     {
-      image: "assets/img/bad.vibes.memes.svg",
-      user: "bad.vibes.memes",
+      image: "assets/img/chibirdart.svg",
+      user: "chibirdart",
       reason: "Segue você",
     },
     {
-      image: "assets/img/bad.vibes.memes.svg",
-      user: "bad.vibes.memes",
+      image: "assets/img/razoesparaacreditar.svg",
+      user: "razoesparaacreditar",
       reason: "Novo no Instagram",
     },
     {
-      image: "assets/img/bad.vibes.memes.svg",
-      user: "bad.vibes.memes",
+      image: "assets/img/adorable_animals.svg",
+      user: "adorable_animals",
+      reason: "Segue você",
+    },
+    {
+      image: "assets/img/smallcutecats.svg",
+      user: "smallcutecats",
       reason: "Segue você",
     },
   ];

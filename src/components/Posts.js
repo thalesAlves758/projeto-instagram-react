@@ -13,24 +13,14 @@ export default function Posts() {
       amountLikes: 101523
     },
     {
-      image: "assets/img/meowed.svg",
-      user: "meowed",
-      contentImage: "assets/img/gato-telefone.svg",
+      image: "assets/img/barked.svg",
+      user: "barked",
+      contentImage: "assets/img/dog.svg",
       likedBy: {
-        image: "assets/img/respondeai.svg",
-        user: "respondeai",
+        image: "assets/img/adorable_animals.svg",
+        user: "adorable_animals",
       },
-      amountLikes: 101523
-    },
-    {
-      image: "assets/img/meowed.svg",
-      user: "meowed",
-      contentImage: "assets/img/gato-telefone.svg",
-      likedBy: {
-        image: "assets/img/respondeai.svg",
-        user: "respondeai",
-      },
-      amountLikes: 101523
+      amountLikes: 99159
     },
   ];
 
